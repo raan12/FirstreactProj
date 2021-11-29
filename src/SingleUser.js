@@ -17,6 +17,7 @@ function SingleUser(props) {
                     <div className="col-md-12">
                         <button onClick={() => window.history.back()} className="btn btn-warning mb-4">Go Back</button>
                         <h3>Single User</h3>
+                        <div class="table-responsive">
                         <table class="table mt-2">
                             <tbody>
 
@@ -42,6 +43,7 @@ function SingleUser(props) {
 
                             </tbody>
                         </table>
+                        </div>
                     </div>
                 </div>
                   </div>

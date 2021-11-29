@@ -72,7 +72,7 @@ export default function Users() {
 
 
             <h3>Users component</h3>
-
+            <div class="table-responsive">
             <table className="table table-striped">
                 <thead>
                     <tr>
@@ -93,7 +93,7 @@ export default function Users() {
                     }
                 </tbody>
             </table>
-
+</div>
 
         </div>
     )

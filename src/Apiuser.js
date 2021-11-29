@@ -24,8 +24,8 @@ export default function Apiuser(props) {
     }
 
     // pagination
- 
- 
+
+
     return (
         loadStaus ?
             <div>
@@ -35,55 +35,56 @@ export default function Apiuser(props) {
 
                 {/*========= row =========*/}
                 {props.data.length > 0 ?
-                <div className="row">
-                    <div className="container-fluid">
-                        <div className="row">
+                    <div className="row">
+                        <div className="container-fluid">
+                            <div className="row">
 
-                            <div className="col-md-6 mx-auto">
-                         
-                                <h2 className="mt-2 mb-4">API Users component</h2>
+                                <div className="col-md-6 mx-auto">
 
+                                    <h2 className="mt-2 mb-4">API Users component</h2>
 
-                                <table className="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" width="30">Id</th>
-                                            <th scope="col">Image</th>
-                                            <th scope="col">Website</th>
-                                            <th scope="col">Delete</th>
-                                            <th scope="col" width="140">Url</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-
-                                        {
-                                            props.data.map((item, i) =>
-
+                                    <div class="table-responsive">
+                                        <table className="table table-striped">
+                                            <thead>
                                                 <tr>
-                                                    <td key={i}>{item.id}</td>
-                                                    <td key={i}><img src={item.avatar_url} width="150" /></td>
-                                                    <td key={i}>Website URL : {item.html_url}</td>
-                                                    <td>
-                                                        <button onClick={() => { handleClick(item.id) }} className="btn btn-danger d-flex" data-togupdate={valuedelete ? 'true' : 'false'}>
-                                                            Delete
-                                                        </button>
-                                                    </td>
-                                                    <td key={i}>
-                                                        <Link to={'/singleUser/' + item.id} class="btn btn-success">Read more</Link>
-                                                    </td>
+                                                    <th scope="col" width="30">Id</th>
+                                                    <th scope="col">Image</th>
+                                                    <th scope="col">Website</th>
+                                                    <th scope="col">Delete</th>
+                                                    <th scope="col" width="140">Url</th>
                                                 </tr>
-                                            )
-                                        }
+                                            </thead>
+                                            <tbody>
 
-                                    </tbody>
-                                </table>
+
+                                                {
+                                                    props.data.map((item, i) =>
+
+                                                        <tr>
+                                                            <td key={i}>{item.id}</td>
+                                                            <td key={i}><img src={item.avatar_url} width="150" /></td>
+                                                            <td key={i}>Website URL : {item.html_url}</td>
+                                                            <td>
+                                                                <button onClick={() => { handleClick(item.id) }} className="btn btn-danger d-flex" data-togupdate={valuedelete ? 'true' : 'false'}>
+                                                                    Delete
+                                                                </button>
+                                                            </td>
+                                                            <td key={i}>
+                                                                <Link to={'/singleUser/' + item.id} class="btn btn-success">Read more</Link>
+                                                            </td>
+                                                        </tr>
+                                                    )
+                                                }
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
                             </div>
-
                         </div>
                     </div>
-                </div>
-                : ''}
+                    : ''}
                 {/*========= end row =========*/}
 
 

@@ -105,6 +105,7 @@ export default function Createuser(props) {
                     {storedata.length > 0 ?
                         <>
                             <h2>Forms Data</h2>
+                            <div class="table-responsive">
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -125,6 +126,7 @@ export default function Createuser(props) {
                                     }
                                 </tbody>
                             </table>
+                            </div>
                         </>
                         :
                         <div class="alert alert-danger mt-5" role="alert">
