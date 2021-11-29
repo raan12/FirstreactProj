@@ -39,7 +39,7 @@ export default function Apiuser(props) {
                         <div className="container-fluid">
                             <div className="row">
 
-                                <div className="col-md-6 mx-auto">
+                                <div className=" col-12 mx-auto">
 
                                     <h2 className="mt-2 mb-4">API Users component</h2>
 
