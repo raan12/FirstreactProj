@@ -86,7 +86,7 @@ export default function Createuser(props) {
 
             <div className="row">
                 <div className="col-md-6 col-12">
-                    <h2>Create User : Forms Block DIPTANSHU</h2>
+                    <h2>Create User : Forms</h2>
 
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Name" value={name} onChange={(e) => nameUpdate(e.target.value)} />
