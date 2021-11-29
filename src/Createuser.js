@@ -15,8 +15,6 @@ export default function Createuser(props) {
 
     function SubmitFun() {
         const data = { name, age, address }
-   
-
         if (name != '' && age != '' && address != '') {
             setStoredata((storedata) => [...storedata, data])
             nameUpdate('');
@@ -24,10 +22,8 @@ export default function Createuser(props) {
             addressUpdate('')
         }
         else{
-            alert('Fill your all fields !')
+            alert('Please Fill your all fields !..........')
         }
-
-
     }
 
     console.log(storedata);
